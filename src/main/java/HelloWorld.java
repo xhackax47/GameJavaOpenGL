@@ -17,7 +17,7 @@ public class HelloWorld {
 	private long window;
 
 	public void run() {
-		System.out.println("Hello LWJGL " + Version.getVersion() + "!");
+		System.out.println("Bonjour et bienvenue dans LWJGL Version " + Version.getVersion() + " !!!");
 
 		init();
 		loop();
@@ -46,7 +46,7 @@ public class HelloWorld {
 		glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE); // the window will be resizable
 
 		// Create the window
-		window = glfwCreateWindow(300, 300, "Hello World!", NULL, NULL);
+		window = glfwCreateWindow(1280, 1024, "Test LWJGL OpenGL", NULL, NULL);
 		if ( window == NULL )
 			throw new RuntimeException("Failed to create the GLFW window");
 
